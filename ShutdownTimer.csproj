@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>shutdown-icon-24.ico</ApplicationIcon>
+    <Title>Shutdown Timer</Title>
+    <PackageIcon>shutdown-icon-24.png</PackageIcon>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Company>$(Authors)</Company>
+    <Authors>Guney Arslan</Authors>
+    <Description>A free application that you can use to shut down your computer by specifying a time.</Description>
+    <StartupObject>ShutdownTimer.Program</StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="shutdown-icon-24.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="shutdown-icon-24.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="shutdown-icon-24.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
