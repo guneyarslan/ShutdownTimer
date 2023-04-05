@@ -21,3 +21,5 @@ It even gave an error because it didn't write -windows in the 'target framework'
 Anyway, in conclusion, here is my first C# application, computer shutdown program with timer.
 In addition, the codes are completely open source. You can use it as you wish and publish it as you wish.
 I do not claim any rights. But it would be nice if you just give it a star. Thank you so much :))
+
+![Screenshot 2023-04-05 162530](https://user-images.githubusercontent.com/108914279/230107394-8c92382e-8ecd-4a7d-8635-26492c4ae485.png)
